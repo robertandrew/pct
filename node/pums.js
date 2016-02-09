@@ -9,6 +9,8 @@ var pums = io.readDataSync('ss14pid.csv');
 var pumsPersonKey = io.readDataSync('pumsPersonKey.json');
 
 var newPums = [];
+var subsets = ['42430','SCHL','SEX','OC','NATIVITY','RAC1P','SCIENGRLP','VPS','WAOB','AGEP'];
+console.log(subsets);
 
 //VARIOUS UTILITY FUNCTIONS
 var util = {
@@ -26,7 +28,7 @@ var scale = {
 	rawScale: function(d){
 		if(d===undefined){
 			console.log(d);
-			console.log('There was something undefined in your JSON key thing')
+			console.log('There was something undefined in your JSON key thing');
 		}
  		else {
 			return d;
@@ -34,15 +36,18 @@ var scale = {
 	}
 };
 
+subsets.forEach(function(dS,iS){
+	console.log(scale.label(dS));
+});
 
 var percentile = {
 	calculate: function(dataset){
 
 		var included = 0;
 		var excluded = 0;
-		// var incomeVar = "WAGP";//wages and salary
+	 	var incomeVar = "WAGP";//wages and salary
 		// var incomeVar = "PINCP";//Personal income, signed
-		var incomeVar = "PERNP";//Earnings
+		// var incomeVar = "PERNP";//Earnings
 		var weight = "PWFTP";
 
 		//RESTRICT IT ONLY TO NONZERO, DEFINED VALUES
@@ -107,10 +112,6 @@ var percentile = {
 					var valueAdjustment = +(thisGap * percentAdjustment).toFixed(1);
 
 					thisItem.bottomBreak = +thisValue + valueAdjustment;
-					console.log(thisGap)
-
-					console.log(percentAdjustment)
-					console.log(valueAdjustment)
 				 }
 				 percentiles.push(thisItem);
 			}
@@ -127,17 +128,15 @@ var percentile = {
 		percentiles = percentiles.sort(function(a,b){
 			return d3.ascending(a.percentile,b.percentile);
 		});
-		console.log(percentiles.length);
 
-		console.log(percentiles);
-		console.log(d3.median(liveSet,(function(m){return m[incomeVar];})));
-
-
-		console.log(included + " in, " + excluded + " out");
+		// console.log(included + " in, " + excluded + " out");
 
 	},
 	restrict: function(dataset,incomeVar){
 		//Pulls out one top-level code from the dataset
+	},
+	nest: function(dataset,subset){
+
 	}
 };
 
