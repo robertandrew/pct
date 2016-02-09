@@ -36,27 +36,107 @@ var scale = {
 
 
 var percentile = {
-	calculate: function(dataset,variable){
-		var countZero = 0;
-		var countNonzero = 0;
-		var total = d3.extent(dataset,function(d){
-			if(+d[variable]!=0) {
-				countNonzero++;
-				return d[variable];
+	calculate: function(dataset){
+
+		var included = 0;
+		var excluded = 0;
+		// var incomeVar = "WAGP";//wages and salary
+		// var incomeVar = "PINCP";//Personal income, signed
+		var incomeVar = "PERNP";//Earnings
+		var weight = "PWFTP";
+
+		//RESTRICT IT ONLY TO NONZERO, DEFINED VALUES
+		var liveSet = dataset.filter(function(f){
+			if(+f[incomeVar]!==0) {
+				included++;
+				return f[incomeVar];
 			}
 			else {
-				countZero++;
+				excluded++;
 			}
 		});
-		dataset.forEach(function(dD,iD){
-			// console.log(dD[variable]);
+
+		//FLAG TINY SAMPLES
+		if(included<=100){
+			console.log('Your subsample is only ' + included + ', which is definitely something to look out for.');
+		}
+
+		//SORT IT BY INCOME
+		liveSet = liveSet.sort(function(a,b){
+			return d3.descending(a[incomeVar],b[incomeVar]);
 		});
-		console.log(total)
-		console.log(countZero)
-		console.log(countNonzero)
+
+		//ABOVE AND BELOW COUNT WEIGHT ABOVE AND BELOW
+
+		var poorer = d3.sum(liveSet,function(s){return s[weight];});
+		var richer = 0;
+		var countPoorer = liveSet.length-1;
+		var countRicher = 0;
+		var total = d3.sum(liveSet,function(s){return s[weight];});
+
+		//And create an almost-empty object to hold the percentile breaks
+		var percentiles = [{percentile:0,
+			bottomBreak:+liveSet[0][incomeVar]}];
+
+		liveSet.forEach(function(dD,iD){
+
+			//CALCULATE THE BEFORE AND AFTER PERCENTS
+			var pctRicher = richer/total * 100;
+			var pctThis = +dD[weight]/total * 100;
+			var pctRicherNext = pctRicher + pctThis;
+			var pctPoorer = (poorer - (+dD[weight]))/total * 100;
+			var thisPercentile = ((pctRicherNext) + "").split('.')[0];
+
+			if((pctRicher + "").split('.')[0]!=thisPercentile && iD!=liveSet.length-1){
+
+				var thisValue = +liveSet[iD][incomeVar];
+				var nextValue = +liveSet[iD+1][incomeVar];
+				var thisGap = nextValue - thisValue;
+
+
+				 thisItem = {
+					 percentile:+thisPercentile,
+				 };
+
+
+				 //FIRST, ZERO GAPS CAN BE INSERTED UNTOUCHED
+				 if(thisGap === 0) {
+					 thisItem.bottomBreak = thisValue;
+				 } else {
+					var percentAdjustment = (thisPercentile-pctRicher);
+					var valueAdjustment = +(thisGap * percentAdjustment).toFixed(1);
+
+					thisItem.bottomBreak = +thisValue + valueAdjustment;
+					console.log(thisGap)
+
+					console.log(percentAdjustment)
+					console.log(valueAdjustment)
+				 }
+				 percentiles.push(thisItem);
+			}
+
+			//INCREMENT EVERYTHING AT THE END
+			poorer -= +dD[weight];
+			richer += +dD[weight];
+			countPoorer--;
+			countRicher++;
+		});
+
+
+		//Sort percentiles for coherence sake
+		percentiles = percentiles.sort(function(a,b){
+			return d3.ascending(a.percentile,b.percentile);
+		});
+		console.log(percentiles.length);
+
+		console.log(percentiles);
+		console.log(d3.median(liveSet,(function(m){return m[incomeVar];})));
+
+
+		console.log(included + " in, " + excluded + " out");
 
 	},
-	restrict: function(dataset,variable){
+	restrict: function(dataset,incomeVar){
 		//Pulls out one top-level code from the dataset
 	}
 };
@@ -89,12 +169,11 @@ pums.forEach(function(dP,iP){
 
 //CALCULATE THE PERCENTILES
 
-percentile.calculate(pums,"WAGP");
+percentile.calculate(pums);
 
 
  // console.log(pums[10]);
 
-//LABEL AND CODE EVERY RELEVANT DATAPOINT
 
 // io.writeDataSync('pums.json',newPums);
 // io.writeDataSync('fullPums.json',pums);
