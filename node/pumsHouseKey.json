@@ -1,0 +1,3296 @@
+[{
+	"id": "SERIALNO 7",
+	"label": "Housing unit/GQ person serial number",
+	"keys": [{
+		"key": "0000001..9999999",
+		"label": "Unique identifier"
+	}]
+}, {
+	"id": "DIVISION 1",
+	"label": "Division code",
+	"keys": [{
+		"key": "0",
+		"label": "Puerto Rico"
+	}]
+}, {
+	"id": "DIVISION 1",
+	"label": "Division code",
+	"keys": [{
+		"key": "0",
+		"label": "Puerto Rico"
+	}, {
+		"key": "1",
+		"label": "New England (Northeast region)"
+	}, {
+		"key": "2",
+		"label": "Middle Atlantic (Northeast region)"
+	}, {
+		"key": "3",
+		"label": "East North Central (Midwest region)"
+	}, {
+		"key": "4",
+		"label": "West North Central (Midwest region)"
+	}, {
+		"key": "5",
+		"label": "South Atlantic (South region)"
+	}, {
+		"key": "6",
+		"label": "East South Central (South region)"
+	}, {
+		"key": "7",
+		"label": "West South Central (South Region)"
+	}, {
+		"key": "8",
+		"label": "Mountain (West region)"
+	}, {
+		"key": "9",
+		"label": "Pacific (West region)"
+	}]
+}, {
+	"id": "PUMA 5",
+	"label": "Public use microdata area code (PUMA) based on 2010 Census definition",
+	"keys": [{
+		"key": "00100..70301",
+		"label": "Public use microdata area codes"
+	}]
+}, {
+	"id": "REGION 1",
+	"label": "Region code",
+	"keys": [{
+		"key": "1",
+		"label": "Northeast"
+	}, {
+		"key": "2",
+		"label": "Midwest"
+	}, {
+		"key": "3",
+		"label": "South"
+	}, {
+		"key": "4",
+		"label": "West"
+	}, {
+		"key": "9",
+		"label": "Puerto Rico"
+	}]
+}, {
+	"id": "ST 2",
+	"label": "State Code",
+	"keys": [{
+		"key": "1",
+		"label": "Alabama/AL"
+	}, {
+		"key": "2",
+		"label": "Alaska/AK"
+	}, {
+		"key": "4",
+		"label": "Arizona/AR"
+	}, {
+		"key": "5",
+		"label": "Arkansas/AR"
+	}, {
+		"key": "6",
+		"label": "California/CA"
+	}, {
+		"key": "8",
+		"label": "Colorado/CO"
+	}, {
+		"key": "9",
+		"label": "Connecticut/CT"
+	}, {
+		"key": "10",
+		"label": "Delaware/DE"
+	}, {
+		"key": "11",
+		"label": "District of Columbia/DC"
+	}, {
+		"key": "12",
+		"label": "Florida/FL"
+	}, {
+		"key": "13",
+		"label": "Georgia/GA"
+	}, {
+		"key": "15",
+		"label": "Hawaii/HI"
+	}, {
+		"key": "16",
+		"label": "Idaho/ID"
+	}, {
+		"key": "17",
+		"label": "Illinois/IL"
+	}, {
+		"key": "18",
+		"label": "Indiana/IN"
+	}, {
+		"key": "19",
+		"label": "Iowa/IA"
+	}, {
+		"key": "20",
+		"label": "Kansas/KS"
+	}, {
+		"key": "21",
+		"label": "Kentucky/KY"
+	}, {
+		"key": "22",
+		"label": "Louisiana/LA"
+	}, {
+		"key": "23",
+		"label": "Maine/ME"
+	}, {
+		"key": "24",
+		"label": "Maryland/MD"
+	}, {
+		"key": "25",
+		"label": "Massachusetts/MA"
+	}, {
+		"key": "26",
+		"label": "Michigan/MI"
+	}, {
+		"key": "27",
+		"label": "Minnesota/MN"
+	}, {
+		"key": "28",
+		"label": "Mississippi/MS"
+	}, {
+		"key": "29",
+		"label": "Missouri/MO"
+	}, {
+		"key": "30",
+		"label": "Montana/MT"
+	}, {
+		"key": "31",
+		"label": "Nebraska/NE"
+	}, {
+		"key": "32",
+		"label": "Nevada/NV"
+	}, {
+		"key": "33",
+		"label": "New Hampshire/NH"
+	}, {
+		"key": "34",
+		"label": "New Jersey/NJ"
+	}, {
+		"key": "35",
+		"label": "New Mexico/NM"
+	}, {
+		"key": "36",
+		"label": "New York/NY"
+	}, {
+		"key": "37",
+		"label": "North Carolina/NC"
+	}, {
+		"key": "38",
+		"label": "North Dakota/ND"
+	}, {
+		"key": "39",
+		"label": "Ohio/OH"
+	}, {
+		"key": "40",
+		"label": "Oklahoma/OK"
+	}, {
+		"key": "41",
+		"label": "Oregon/OR"
+	}, {
+		"key": "42",
+		"label": "Pennsylvania/PA"
+	}, {
+		"key": "44",
+		"label": "Rhode Island/RI"
+	}, {
+		"key": "45",
+		"label": "South Carolina/SC"
+	}, {
+		"key": "46",
+		"label": "South Dakota/SD"
+	}, {
+		"key": "47",
+		"label": "Tennessee/TN"
+	}, {
+		"key": "48",
+		"label": "Texas/TX"
+	}, {
+		"key": "49",
+		"label": "Utah/UT"
+	}, {
+		"key": "50",
+		"label": "Vermont/VT"
+	}, {
+		"key": "51",
+		"label": "Virginia/VA"
+	}, {
+		"key": "53",
+		"label": "Washington/WA"
+	}, {
+		"key": "54",
+		"label": "West Virginia/WV"
+	}, {
+		"key": "55",
+		"label": "Wisconsin/WI"
+	}, {
+		"key": "56",
+		"label": "Wyoming/WY"
+	}, {
+		"key": "72",
+		"label": "Puerto Rico/PR"
+	}]
+}, {
+	"id": "ADJHSG 7",
+	"label": "Adjustment factor for housing dollar amounts (6 implied decimal places)",
+	"keys": [{
+		"key": "1000000",
+		"label": "2014 factor (1.000000)"
+	}]
+}, {
+	"id": "ADJINC 7",
+	"label": "Adjustment factor for income and earnings dollar amounts(6 implied decimal places)",
+	"keys": [{
+		"key": "1008425",
+		"label": "2014 factor (1.008425)"
+	}]
+}, {
+	"id": "WGTP 5",
+	"label": "Housing Weight",
+	"keys": [{
+		"key": "00000 Group Quarters place holder record",
+		"label": ""
+	}, {
+		"key": "00001..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "NP 2",
+	"label": "Number of person records following this housing record",
+	"keys": [{
+		"key": "00.Vacant unit",
+		"label": ""
+	}, {
+		"key": "01.One person record (one person in household or any person in group quarters)",
+		"label": ""
+	}, {
+		"key": "02..20",
+		"label": "Number of person records (number of persons in.household)"
+	}]
+}, {
+	"id": "TYPE 1",
+	"label": "Type of unit",
+	"keys": [{
+		"key": "1",
+		"label": "Housing unit"
+	}, {
+		"key": "2",
+		"label": "Institutional group quarters"
+	}, {
+		"key": "3",
+		"label": "Noninstitutional group quarters"
+	}]
+}, {
+	"id": "ACCESS 1",
+	"label": "Access to the Internet",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes, with subscription to an Internet service"
+	}, {
+		"key": "2",
+		"label": "Yes, without a subscription to an Internet service"
+	}, {
+		"key": "3",
+		"label": "No Internet access at this house, apartment, or mobile home"
+	}]
+}, {
+	"id": "ACR 1",
+	"label": "Lot size",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/not a one-family house or mobile home)"
+	}, {
+		"key": "1",
+		"label": "House on less than one acre"
+	}, {
+		"key": "2",
+		"label": "House on one to less than ten acres"
+	}, {
+		"key": "3",
+		"label": "House on ten or more acres"
+	}]
+}, {
+	"id": "AGS 1",
+	"label": "Sales of Agriculture Products (Yearly sales)",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant/not a one family house or mobile home/less than 1 acre)"
+	}, {
+		"key": "1",
+		"label": "None"
+	}, {
+		"key": "2",
+		"label": "$1 - $ 999"
+	}, {
+		"key": "3",
+		"label": "$ 1000 - $ 2499"
+	}, {
+		"key": "4",
+		"label": "$ 2500 - $ 4999"
+	}, {
+		"key": "5",
+		"label": "$ 5000 - $ 9999"
+	}, {
+		"key": "6",
+		"label": "$10000+"
+	}]
+}, {
+	"id": "BATH 1",
+	"label": "Bathtub or shower",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "BDSP 2",
+	"label": "Number of bedrooms",
+	"keys": [{
+		"key": "Bb.N/A (GQ)",
+		"label": ""
+	}, {
+		"key": "00..99",
+		"label": "0 to 99 bedrooms (Top-coded)"
+	}]
+}, {
+	"id": "BLD 2",
+	"label": "Units in structure",
+	"keys": [{
+		"key": "bb",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Mobile home or trailer"
+	}, {
+		"key": "2",
+		"label": "One-family house detached"
+	}, {
+		"key": "3",
+		"label": "One-family house attached"
+	}, {
+		"key": "4",
+		"label": "2 Apartments"
+	}, {
+		"key": "5",
+		"label": "3-4 Apartments"
+	}, {
+		"key": "6",
+		"label": "5-9 Apartments"
+	}, {
+		"key": "7",
+		"label": "10-19 Apartments"
+	}, {
+		"key": "8",
+		"label": "20-49 Apartments"
+	}, {
+		"key": "9",
+		"label": "50 or more apartments"
+	}, {
+		"key": "10",
+		"label": "Boat, RV, van, etc."
+	}]
+}, {
+	"id": "BROADBND 1",
+	"label": "Mobile broadband plan",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "BUS 1",
+	"label": "Business or medical office on property",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/not a one-family house or mobile home)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "COMPOTHX 1",
+	"label": "Other computer equipment",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "CONP 4",
+	"label": "Condo fee (monthly amount)",
+	"keys": [{
+		"key": "bbbb",
+		"label": "N/A (GQ/vacant/not owned or being bought)"
+	}, {
+		"key": "0",
+		"label": "Not condo"
+	}, {
+		"key": "0001..9999",
+		"label": "$1 - $9999 (Rounded and top-coded)"
+	}]
+}, {
+	"id": "DIALUP 1",
+	"label": "Dial-up service",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "DSL 1",
+	"label": "DSL service",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "ELEP 3",
+	"label": "Electricity (monthly cost)",
+	"keys": [{
+		"key": "bbb",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "1",
+		"label": "Included in rent or in condo fee"
+	}, {
+		"key": "2",
+		"label": "No charge or electricity not used"
+	}, {
+		"key": "003..999",
+		"label": "$3 to $999 (Rounded and top-coded)"
+	}]
+}, {
+	"id": "FIBEROP 1",
+	"label": "Fiber-optic Internet service",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "FS 1",
+	"label": "Yearly food stamp/Supplemental Nutrition Assistance Program recipiency",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (vacant)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "FULP 4",
+	"label": "Fuel cost(yearly cost for fuels other than gas and electricity)",
+	"keys": [{
+		"key": "bbbb",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "1",
+		"label": "Included in rent or in condo fee"
+	}, {
+		"key": "2",
+		"label": "No charge or these fuels not used"
+	}, {
+		"key": "0003..9999",
+		"label": "$3 to $9999 (Rounded and top-coded)"
+	}]
+}, {
+	"id": "GASP 3",
+	"label": "Gas (monthly cost)",
+	"keys": [{
+		"key": "bbb",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "1",
+		"label": "Included in rent or in condo fee"
+	}, {
+		"key": "2",
+		"label": "Included in electricity payment"
+	}, {
+		"key": "3",
+		"label": "No charge or gas not used"
+	}, {
+		"key": "004..999",
+		"label": "$4 to $999 (Rounded and top-coded)"
+	}]
+}, {
+	"id": "HANDHELD 1",
+	"label": "Handheld computer",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "HFL 1",
+	"label": "House heating fuel",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "1",
+		"label": "Utility gas"
+	}, {
+		"key": "2",
+		"label": "Bottled, tank, or LP gas"
+	}, {
+		"key": "3",
+		"label": "Electricity"
+	}, {
+		"key": "4",
+		"label": "Fuel oil, kerosene, etc."
+	}, {
+		"key": "5",
+		"label": "Coal or coke"
+	}, {
+		"key": "6",
+		"label": "Wood"
+	}, {
+		"key": "7",
+		"label": "Solar energy"
+	}, {
+		"key": "8",
+		"label": "Other fuel"
+	}, {
+		"key": "9",
+		"label": "No fuel used"
+	}]
+}, {
+	"id": "INSP 5",
+	"label": "Fire/hazard/flood insurance (yearly amount)",
+	"keys": [{
+		"key": "bbbbb",
+		"label": "N/A (GQ/vacant/not owned or being bought)"
+	}, {
+		"key": "0",
+		"label": "None"
+	}, {
+		"key": "00001..10000",
+		"label": "$1 to $10000 (Rounded and top-coded)"
+	}]
+}, {
+	"id": "LAPTOP 1",
+	"label": "Laptop, desktop, or notebook computer",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "MHP 5",
+	"label": "Mobile home costs (yearly amount)",
+	"keys": [{
+		"key": "bbbbb",
+		"label": "N/A (GQ/vacant/not owned or being bought/not mobile home)"
+	}, {
+		"key": "0",
+		"label": "None"
+	}, {
+		"key": "00001..99999",
+		"label": "$1 to $99999 (Rounded and top-coded)"
+	}]
+}, {
+	"id": "MODEM 1",
+	"label": "Cable Internet service",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "MRGI 1",
+	"label": "First mortgage payment includes fire/hazard/flood insurance",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant/not owned or being bought/not mortgaged)"
+	}, {
+		"key": "1",
+		"label": "Yes, insurance included in payment"
+	}, {
+		"key": "2",
+		"label": "No, insurance paid separately or no insurance"
+	}]
+}, {
+	"id": "MRGP 5",
+	"label": "First mortgage payment (monthly amount)",
+	"keys": [{
+		"key": "bbbbb",
+		"label": "N/A (GQ/vacant/not owned or being bought/not mortgaged)"
+	}, {
+		"key": "00001..99999",
+		"label": "$1 to $99999 (Rounded and top-coded)"
+	}]
+}, {
+	"id": "MRGT 1",
+	"label": "First mortgage payment includes real estate taxes",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant/not owned or being bought/not mortgaged)"
+	}, {
+		"key": "1",
+		"label": "Yes, taxes included in payment"
+	}, {
+		"key": "2",
+		"label": "No, taxes paid separately or taxes not required"
+	}]
+}, {
+	"id": "MRGX 1",
+	"label": "First mortgage status",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant/not owned or being bought)"
+	}, {
+		"key": "1",
+		"label": "Mortgage, deed of trust, or similar debt"
+	}, {
+		"key": "2",
+		"label": "Contract to purchase"
+	}, {
+		"key": "3",
+		"label": "None"
+	}]
+}, {
+	"id": "OTHSVCEX 1",
+	"label": "Other Internet service",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "REFR 1",
+	"label": "Refrigerator",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "RMSP 2",
+	"label": "Number of Rooms",
+	"keys": [{
+		"key": "bb",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "00..99",
+		"label": "Rooms (Top-coded)"
+	}]
+}, {
+	"id": "RNTM 1",
+	"label": "Meals included in rent",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/not a rental unit/occupied without rent payment)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "RNTP 5",
+	"label": "Monthly rent",
+	"keys": [{
+		"key": "bbbbbN/A (GQ/not a rental unit/occupied without rent payment)",
+		"label": ""
+	}, {
+		"key": "00001..99999",
+		"label": "$1 to $99999 (Rounded and top-coded)"
+	}]
+}, {
+	"id": "RWAT 1",
+	"label": "Hot and cold running water",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}, {
+		"key": "9",
+		"label": "Case is from Puerto Rico, RWAT not applicable"
+	}]
+}, {
+	"id": "RWATPR 1",
+	"label": "Running water",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}, {
+		"key": "9",
+		"label": "Case is from the United States, RWATPR not applicable"
+	}]
+}, {
+	"id": "SATELLITE 1",
+	"label": "Satellite Internet service",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "SINK 1",
+	"label": "Sink with a faucet",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "SMP 5",
+	"label": "Total payment on all second and junior mortgages and home equity loans",
+	"keys": [{
+		"key": "(monthly amount)",
+		"label": ""
+	}, {
+		"key": "bbbbb",
+		"label": "N/A (GQ/vacant/not owned or being bought/no second or junior mortgages or home equity loans)"
+	}, {
+		"key": "00001..99999",
+		"label": "$1 to $99999 (Rounded and top-coded)"
+	}]
+}, {
+	"id": "STOV 1",
+	"label": "Stove or range",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "TEL 1",
+	"label": "Telephone",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "TEN 1",
+	"label": "Tenure",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "1",
+		"label": "Owned with mortgage or loan (include home equity loans)"
+	}, {
+		"key": "2",
+		"label": "Owned free and clear"
+	}, {
+		"key": "3",
+		"label": "Rented"
+	}, {
+		"key": "4",
+		"label": "Occupied without payment of rent"
+	}]
+}, {
+	"id": "TOIL 1",
+	"label": "Flush toilet",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "VACS 1",
+	"label": "Vacancy status",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/occupied)"
+	}, {
+		"key": "1",
+		"label": "For rent"
+	}, {
+		"key": "2",
+		"label": "Rented, not occupied"
+	}, {
+		"key": "3",
+		"label": "For sale only"
+	}, {
+		"key": "4",
+		"label": "Sold, not occupied"
+	}, {
+		"key": "5",
+		"label": "For seasonal/recreational/occasional use"
+	}, {
+		"key": "6",
+		"label": "For migrant workers"
+	}, {
+		"key": "7",
+		"label": "Other vacant"
+	}]
+}, {
+	"id": "VALP 7",
+	"label": "Property value",
+	"keys": [{
+		"key": "bbbbbbb N/A (GQ/vacant units, except ”for-sale-only“ and ”sold, not occupied”/not owned or being",
+		"label": "bought)"
+	}, {
+		"key": "0000001..9999999",
+		"label": "$1 to $9999999 (Rounded and top-coded)"
+	}]
+}, {
+	"id": "VEH 1",
+	"label": "Vehicles (1 ton or less) available",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "0",
+		"label": "No vehicles"
+	}, {
+		"key": "1",
+		"label": "1 vehicle"
+	}, {
+		"key": "2",
+		"label": "2 vehicles"
+	}, {
+		"key": "3",
+		"label": "3 vehicles"
+	}, {
+		"key": "4",
+		"label": "4 vehicles"
+	}, {
+		"key": "5",
+		"label": "5 vehicles"
+	}, {
+		"key": "6",
+		"label": "6 or more vehicles"
+	}]
+}, {
+	"id": "WATP 4",
+	"label": "Water (yearly cost)",
+	"keys": [{
+		"key": "bbbb",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "1",
+		"label": "Included in rent or in condo fee"
+	}, {
+		"key": "2",
+		"label": "No charge"
+	}, {
+		"key": "0003..9999",
+		"label": "$3 to $9999 (Rounded and top-coded)"
+	}]
+}, {
+	"id": "YBL 2",
+	"label": "When structure first built",
+	"keys": [{
+		"key": "bb",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "1939 or earlier"
+	}, {
+		"key": "2",
+		"label": "1940 to 1949"
+	}, {
+		"key": "3",
+		"label": "1950 to 1959"
+	}, {
+		"key": "4",
+		"label": "1960 to 1969"
+	}, {
+		"key": "5",
+		"label": "1970 to 1979"
+	}, {
+		"key": "6",
+		"label": "1980 to 1989"
+	}, {
+		"key": "7",
+		"label": "1990 to 1999"
+	}, {
+		"key": "8",
+		"label": "2000 to 2004"
+	}, {
+		"key": "9",
+		"label": "2005"
+	}, {
+		"key": "10",
+		"label": "2006"
+	}, {
+		"key": "11",
+		"label": "2007"
+	}, {
+		"key": "12",
+		"label": "2008"
+	}, {
+		"key": "13",
+		"label": "2009"
+	}, {
+		"key": "14",
+		"label": "2010"
+	}, {
+		"key": "15",
+		"label": "2011"
+	}, {
+		"key": "16",
+		"label": "2012"
+	}, {
+		"key": "17",
+		"label": "2013"
+	}, {
+		"key": "18",
+		"label": "2014"
+	}]
+}, {
+	"id": "FES 1",
+	"label": "Family type and employment status",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant/not a family/same-sex married-couple families)"
+	}, {
+		"key": "1",
+		"label": "Married-couple family: Husband and wife in LF"
+	}, {
+		"key": "2",
+		"label": "Married-couple family: Husband in labor force, wife.not in LF"
+	}, {
+		"key": "3",
+		"label": "Married-couple family: Husband not in LF,wife in LF"
+	}, {
+		"key": "4",
+		"label": "Married-couple family: Neither husband nor wife in LF"
+	}, {
+		"key": "5",
+		"label": "Other family: Male householder, no wife present, in LF"
+	}, {
+		"key": "6",
+		"label": "Other family: Male householder, no wife present, not in LF"
+	}, {
+		"key": "7",
+		"label": "Other family: Female householder, no husband present, in LF"
+	}, {
+		"key": "8",
+		"label": "Other family: Female householder, no husband present, not in LF"
+	}]
+}, {
+	"id": "FINCP 9",
+	"label": "Family income (past 12 months)",
+	"keys": [{
+		"key": "bbbbbbbbb",
+		"label": "N/A(GQ/vacant)"
+	}, {
+		"key": "0",
+		"label": "No family income"
+	}, {
+		"key": "-59999",
+		"label": "Loss of -$59,999 or more"
+	}, {
+		"key": "-00000001..-00059998",
+		"label": "Loss of $1 to -$59,998"
+	}, {
+		"key": "1",
+		"label": "$1 or Break even"
+	}, {
+		"key": "000000002..999999999",
+		"label": "Total family income in dollars (Components are rounded)"
+	}]
+}, {
+	"id": "FPARC 1",
+	"label": "Family presence and age of related children",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant/not a family)"
+	}, {
+		"key": "1",
+		"label": "With related children under 5 years only"
+	}, {
+		"key": "2",
+		"label": "With related children 5 to 17 years only"
+	}, {
+		"key": "3",
+		"label": "With related children under 5 years and 5 to 17 years"
+	}, {
+		"key": "4",
+		"label": "No related children"
+	}]
+}, {
+	"id": "GRNTP 5",
+	"label": "Gross rent (monthly amount)",
+	"keys": [{
+		"key": "bbbbb",
+		"label": "N/A (GQ/vacant/not a rental unit/occupied without rent payment)"
+	}, {
+		"key": "00001..99999",
+		"label": "$1 - $99999 (Components are rounded)"
+	}]
+}, {
+	"id": "GRPIP 3",
+	"label": "Gross rent as a percentage of household income past 12 months",
+	"keys": [{
+		"key": "bbb",
+		"label": "N/A (GQ/vacant/not a rental unit/occupied without rent payment/no household income)"
+	}, {
+		"key": "001..100",
+		"label": "1% to 100%"
+	}, {
+		"key": "101",
+		"label": "101% or more"
+	}]
+}, {
+	"id": "HHL 1",
+	"label": "Household language",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "1",
+		"label": "English only"
+	}, {
+		"key": "2",
+		"label": "Spanish"
+	}, {
+		"key": "3",
+		"label": "Other Indo-European languages"
+	}, {
+		"key": "4",
+		"label": "Asian and Pacific Island languages"
+	}, {
+		"key": "5",
+		"label": "Other language"
+	}]
+}, {
+	"id": "HHT 1",
+	"label": "Household/family type",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "1",
+		"label": "Married couple household"
+	}, {
+		"key": "2",
+		"label": "Other family household:Male householder, no wife present"
+	}, {
+		"key": "3",
+		"label": "Other family household:Female householder, no husband present"
+	}, {
+		"key": "4",
+		"label": "Nonfamily household:Male householder:Living alone"
+	}, {
+		"key": "5",
+		"label": "Nonfamily household:Male householder:Not living alone"
+	}, {
+		"key": "6",
+		"label": "Nonfamily household:Female householder:Living alone"
+	}, {
+		"key": "7",
+		"label": "Nonfamily household:Female householder:Not living alone"
+	}]
+}, {
+	"id": "HINCP 9",
+	"label": "Household income (past 12 months)",
+	"keys": [{
+		"key": "bbbbbbbbb",
+		"label": "N/A(GQ/vacant)"
+	}, {
+		"key": "0",
+		"label": "No household income"
+	}, {
+		"key": "-59999",
+		"label": "Loss of -$59,999 or more"
+	}, {
+		"key": "-00000001..-00059998",
+		"label": "Loss of $1 to -$59,998"
+	}, {
+		"key": "1",
+		"label": "$1 or Break even"
+	}, {
+		"key": "000000002..999999999",
+		"label": "Total household income in dollars (Components are rounded)"
+	}]
+}, {
+	"id": "HOTWAT 1",
+	"label": "Water heater (Puerto Rico only)",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}, {
+		"key": "2",
+		"label": "No"
+	}, {
+		"key": "9",
+		"label": "Case is from the United States, HOTWAT not applicable"
+	}]
+}, {
+	"id": "HUGCL 1",
+	"label": "Household with grandparent living with grandchildren",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "0",
+		"label": "Household without grandparent living with grandchildren"
+	}, {
+		"key": "1",
+		"label": "Household with grandparent living with grandchildren"
+	}]
+}, {
+	"id": "HUPAC 1",
+	"label": "HH presence and age of children",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "1",
+		"label": "With children under 6 years only"
+	}, {
+		"key": "2",
+		"label": "With children 6 to 17 years only"
+	}, {
+		"key": "3",
+		"label": "With children under 6 years and 6 to 17 years"
+	}, {
+		"key": "4",
+		"label": "No children"
+	}]
+}, {
+	"id": "HUPAOC 1",
+	"label": "HH presence and age of own children",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "1",
+		"label": "Presence of own children under 6 years only"
+	}, {
+		"key": "2",
+		"label": "Presence of own children 6 to 17 years only"
+	}, {
+		"key": "3",
+		"label": "Presence of own children under 6 years and 6 to 17 years"
+	}, {
+		"key": "4",
+		"label": "No own children present"
+	}]
+}, {
+	"id": "HUPARC 1",
+	"label": "HH presence and age of related children",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "1",
+		"label": "Presence of related children under 6 years only"
+	}, {
+		"key": "2",
+		"label": "Presence of related children 6 to 17 years only"
+	}, {
+		"key": "3",
+		"label": "Presence of related children under 6 years and 6 to 17 years"
+	}, {
+		"key": "4",
+		"label": "No related children present"
+	}]
+}, {
+	"id": "KIT 1",
+	"label": "Complete kitchen facilities",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes, has stove or range, refrigerator, and sink with a faucet"
+	}, {
+		"key": "2",
+		"label": "No"
+	}]
+}, {
+	"id": "LNGI 1",
+	"label": "Limited English speaking household",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "1",
+		"label": "At least one person in the household 14 and over speaks English only or speaks English 'very well'"
+	}, {
+		"key": "2",
+		"label": "No one in the household 14 and over speaks English only or speaks English 'very well'"
+	}]
+}, {
+	"id": "MULTG 1",
+	"label": "Multigenerational Household",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/Vacant/NP=0)"
+	}, {
+		"key": "1",
+		"label": "No, not a multigenerational household"
+	}, {
+		"key": "2",
+		"label": "Yes, is a multigenerational household"
+	}]
+}, {
+	"id": "MV 1",
+	"label": "When moved into this house or apartment",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "1",
+		"label": "12 months or less"
+	}, {
+		"key": "2",
+		"label": "13 to 23 months"
+	}, {
+		"key": "3",
+		"label": "2 to 4 years"
+	}, {
+		"key": "4",
+		"label": "5 to 9 years"
+	}, {
+		"key": "5",
+		"label": "10 to 19 years"
+	}, {
+		"key": "6",
+		"label": "20 to 29 years"
+	}, {
+		"key": "7",
+		"label": "30 years or more"
+	}]
+}, {
+	"id": "NOC 2",
+	"label": "Number of own children in household (unweighted)",
+	"keys": [{
+		"key": "bb",
+		"label": "N/A(GQ/vacant)"
+	}, {
+		"key": "0",
+		"label": "No own children"
+	}, {
+		"key": "01..19",
+		"label": "Number of own children in household"
+	}]
+}, {
+	"id": "NPF 2",
+	"label": "Number of persons in family (unweighted)",
+	"keys": [{
+		"key": "bb",
+		"label": "N/A (GQ/vacant/non-family household)"
+	}, {
+		"key": "02..20",
+		"label": "Number of persons in family"
+	}]
+}, {
+	"id": "NPP 1",
+	"label": "Grandparent headed household with no parent present",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "0",
+		"label": "Not a grandparent headed household with no parent present"
+	}, {
+		"key": "1",
+		"label": "Grandparent headed household with no parent present"
+	}]
+}, {
+	"id": "NR 1",
+	"label": "Presence of nonrelative in household",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "0",
+		"label": "None"
+	}, {
+		"key": "1",
+		"label": "1 or more nonrelatives"
+	}]
+}, {
+	"id": "NRC 2",
+	"label": "Number of related children in household (unweighted)",
+	"keys": [{
+		"key": "bb",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "0",
+		"label": "No related children"
+	}, {
+		"key": "01..19",
+		"label": "Number of related children in household"
+	}]
+}, {
+	"id": "OCPIP 3",
+	"label": "Selected monthly owner costs as a percentage of household",
+	"keys": [{
+		"key": "income during the past 12 months",
+		"label": ""
+	}, {
+		"key": "bbb N/A (GQ/vacant/not owned or being bought/no household income)",
+		"label": ""
+	}, {
+		"key": "001..100",
+		"label": "1% to 100%"
+	}, {
+		"key": "101 101% or more",
+		"label": ""
+	}]
+}, {
+	"id": "PARTNER 1",
+	"label": "Unmarried partner household",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "0",
+		"label": "No unmarried partner in household"
+	}, {
+		"key": "1",
+		"label": "Male householder, male partner"
+	}, {
+		"key": "2",
+		"label": "Male householder, female partner"
+	}, {
+		"key": "3",
+		"label": "Female householder, female partner"
+	}, {
+		"key": "4",
+		"label": "Female householder, male partner"
+	}]
+}, {
+	"id": "PLM 1",
+	"label": "Complete plumbing facilities",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes, has hot and cold running water, a flush toilet, and a bathtub or shower"
+	}, {
+		"key": "2",
+		"label": "No"
+	}, {
+		"key": "9",
+		"label": "Case is from Puerto Rico, PLM recode not applicable"
+	}]
+}, {
+	"id": "PLMPRP 1",
+	"label": "Complete plumbing facilities for Puerto Rico",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Yes, has running water, a flush toilet, and a bathtub orshower"
+	}, {
+		"key": "2",
+		"label": "No"
+	}, {
+		"key": "9",
+		"label": "Case is from the United States, PLMPRP not applicable"
+	}]
+}, {
+	"id": "PSF 1",
+	"label": "Presence of subfamilies in Household",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "0",
+		"label": "No subfamilies"
+	}, {
+		"key": "1",
+		"label": "1 or more subfamilies"
+	}]
+}, {
+	"id": "R18 1",
+	"label": "Presence of persons under 18 years in household (unweighted)",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "0",
+		"label": "No person under 18 in household"
+	}, {
+		"key": "1",
+		"label": "1 or more persons under 18 in household"
+	}]
+}, {
+	"id": "R60 1",
+	"label": "Presence of persons 60 years and over in household (unweighted)",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "0",
+		"label": "No person 60 and over"
+	}, {
+		"key": "1",
+		"label": "1 person 60 and over"
+	}, {
+		"key": "2",
+		"label": "2 or more persons 60 and over"
+	}]
+}, {
+	"id": "R65 1",
+	"label": "Presence of persons 65 years and over in household (unweighted)",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "0",
+		"label": "No person 65 and over"
+	}, {
+		"key": "1",
+		"label": "1 person 65 and over"
+	}, {
+		"key": "2",
+		"label": "2 or more persons 65 and over"
+	}]
+}, {
+	"id": "RESMODE 1",
+	"label": "Response mode",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "1",
+		"label": "Mail"
+	}, {
+		"key": "2",
+		"label": "CATI/CAPI"
+	}, {
+		"key": "3",
+		"label": "Internet"
+	}]
+}, {
+	"id": "SMOCP 5",
+	"label": "Selected monthly owner costs",
+	"keys": [{
+		"key": "bbbbbN/A (GQ/vacant/not owned or being bought)",
+		"label": ""
+	}, {
+		"key": "00000None",
+		"label": ""
+	}, {
+		"key": "00001..99999",
+		"label": "$1 - $99999 (Components are rounded)"
+	}]
+}, {
+	"id": "SMX 1",
+	"label": "Second or junior mortgage or home equity loan status",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant/not owned or being bought)"
+	}, {
+		"key": "1",
+		"label": "Yes, a second mortgage"
+	}, {
+		"key": "2",
+		"label": "Yes, a home equity loan"
+	}, {
+		"key": "3",
+		"label": "No"
+	}, {
+		"key": "4",
+		"label": "Both a second mortgage and a home equity loan"
+	}]
+}, {
+	"id": "SRNT 1",
+	"label": "Specified rent unit",
+	"keys": [{
+		"key": "b",
+		"label": "N/A"
+	}, {
+		"key": "0",
+		"label": "Not specified rent unit"
+	}, {
+		"key": "1",
+		"label": "Specified rent unit"
+	}]
+}, {
+	"id": "SSMC 1",
+	"label": "Same-sex married couple households",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant)"
+	}, {
+		"key": "0",
+		"label": "Households without a same-sex married couple"
+	}, {
+		"key": "1",
+		"label": "Same-sex married-couple household where not all relevant data shown as reported"
+	}, {
+		"key": "2",
+		"label": "All other same-sex married-couple households"
+	}]
+}, {
+	"id": "SVAL 1",
+	"label": "Specified value owner unit",
+	"keys": [{
+		"key": "b",
+		"label": "N/A"
+	}, {
+		"key": "0",
+		"label": "Not specified value owner unit"
+	}, {
+		"key": "1",
+		"label": "Specified value owner unit"
+	}]
+}, {
+	"id": "TAXP 2",
+	"label": "Property taxes (yearly amount)",
+	"keys": [{
+		"key": "bb",
+		"label": "N/A (GQ/vacant/not owned or being bought)"
+	}, {
+		"key": "1",
+		"label": "None"
+	}, {
+		"key": "2",
+		"label": "$ 1 - $ 49"
+	}, {
+		"key": "3",
+		"label": "$ 50 - $ 99"
+	}, {
+		"key": "4",
+		"label": "$ 100 - $ 149"
+	}, {
+		"key": "5",
+		"label": "$ 150 - $ 199"
+	}, {
+		"key": "6",
+		"label": "$ 200 - $ 249"
+	}, {
+		"key": "7",
+		"label": "$ 250 - $ 299"
+	}, {
+		"key": "8",
+		"label": "$ 300 - $ 349"
+	}, {
+		"key": "9",
+		"label": "$ 350 - $ 399"
+	}, {
+		"key": "10",
+		"label": "$ 400 - $ 449"
+	}, {
+		"key": "11",
+		"label": "$ 450 - $ 499"
+	}, {
+		"key": "12",
+		"label": "$ 500 - $ 549"
+	}, {
+		"key": "13",
+		"label": "$ 550 - $ 599"
+	}, {
+		"key": "14",
+		"label": "$ 600 - $ 649"
+	}, {
+		"key": "15",
+		"label": "$ 650 - $ 699"
+	}, {
+		"key": "16",
+		"label": "$ 700 - $ 749"
+	}, {
+		"key": "17",
+		"label": "$ 750 - $ 799"
+	}, {
+		"key": "18",
+		"label": "$ 800 - $ 849"
+	}, {
+		"key": "19",
+		"label": "$ 850 - $ 899"
+	}, {
+		"key": "20",
+		"label": "$ 900 - $ 949"
+	}, {
+		"key": "21",
+		"label": "$ 950 - $ 999"
+	}, {
+		"key": "22",
+		"label": "$1000 - $1099"
+	}, {
+		"key": "23",
+		"label": "$1100 - $1199"
+	}, {
+		"key": "24",
+		"label": "$1200 - $1299"
+	}, {
+		"key": "25",
+		"label": "$1300 - $1399"
+	}, {
+		"key": "26",
+		"label": "$1400 - $1499"
+	}, {
+		"key": "27",
+		"label": "$1500 - $1599"
+	}, {
+		"key": "28",
+		"label": "$1600 - $1699"
+	}, {
+		"key": "29",
+		"label": "$1700 - $1799"
+	}, {
+		"key": "30",
+		"label": "$1800 - $1899"
+	}, {
+		"key": "31",
+		"label": "$1900 - $1999"
+	}, {
+		"key": "32",
+		"label": "$2000 - $2099"
+	}, {
+		"key": "33",
+		"label": "$2100 - $2199"
+	}, {
+		"key": "34",
+		"label": "$2200 - $2299"
+	}, {
+		"key": "35",
+		"label": "$2300 - $2399"
+	}, {
+		"key": "36",
+		"label": "$2400 - $2499"
+	}, {
+		"key": "37",
+		"label": "$2500 - $2599"
+	}, {
+		"key": "38",
+		"label": "$2600 - $2699"
+	}, {
+		"key": "39",
+		"label": "$2700 - $2799"
+	}, {
+		"key": "40",
+		"label": "$2800 - $2899"
+	}, {
+		"key": "41",
+		"label": "$2900 - $2999"
+	}, {
+		"key": "42",
+		"label": "$3000 - $3099"
+	}, {
+		"key": "43",
+		"label": "$3100 - $3199"
+	}, {
+		"key": "44",
+		"label": "$3200 - $3299"
+	}, {
+		"key": "45",
+		"label": "$3300 - $3399"
+	}, {
+		"key": "46",
+		"label": "$3400 - $3499"
+	}, {
+		"key": "47",
+		"label": "$3500 - $3599"
+	}, {
+		"key": "48",
+		"label": "$3600 - $3699"
+	}, {
+		"key": "49",
+		"label": "$3700 - $3799"
+	}, {
+		"key": "50",
+		"label": "$3800 - $3899"
+	}, {
+		"key": "51",
+		"label": "$3900 - $3999"
+	}, {
+		"key": "52",
+		"label": "$4000 - $4099"
+	}, {
+		"key": "53",
+		"label": "$4100 - $4199"
+	}, {
+		"key": "54",
+		"label": "$4200 - $4299"
+	}, {
+		"key": "55",
+		"label": "$4300 - $4399"
+	}, {
+		"key": "56",
+		"label": "$4400 - $4499"
+	}, {
+		"key": "57",
+		"label": "$4500 - $4599"
+	}, {
+		"key": "58",
+		"label": "$4600 - $4699"
+	}, {
+		"key": "59",
+		"label": "$4700 - $4799"
+	}, {
+		"key": "60",
+		"label": "$4800 - $4899"
+	}, {
+		"key": "61",
+		"label": "$4900 - $4999"
+	}, {
+		"key": "62",
+		"label": "$5000 - $5499"
+	}, {
+		"key": "63",
+		"label": "$5500 - $5999"
+	}, {
+		"key": "64",
+		"label": "$6000 - $6999"
+	}, {
+		"key": "65",
+		"label": "$7000 - $7999"
+	}, {
+		"key": "66",
+		"label": "$8000 - $8999"
+	}, {
+		"key": "67",
+		"label": "$9000 - $9999"
+	}, {
+		"key": "68",
+		"label": "$10000+(Top-coded)"
+	}]
+}, {
+	"id": "WIF 1",
+	"label": "Workers in family during the past 12 months",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ/vacant/non-family household)"
+	}, {
+		"key": "0",
+		"label": "No workers"
+	}, {
+		"key": "1",
+		"label": "1 worker"
+	}, {
+		"key": "2",
+		"label": "2 workers"
+	}, {
+		"key": "3",
+		"label": "3 or more workers in family"
+	}]
+}, {
+	"id": "WKEXREL 2",
+	"label": "Work experience of householder and spouse",
+	"keys": [{
+		"key": "bb",
+		"label": "N/A (GQ/vacant/not a family)"
+	}, {
+		"key": "1",
+		"label": "Householder and spouse worked FT"
+	}, {
+		"key": "2",
+		"label": "Householder worked FT; spouse worked < FT"
+	}, {
+		"key": "3",
+		"label": "Householder worked FT; spouse did not work"
+	}, {
+		"key": "4",
+		"label": "Householder worked < FT; spouse worked FT"
+	}, {
+		"key": "5",
+		"label": "Householder worked < FT; spouse worked < FT"
+	}, {
+		"key": "6",
+		"label": "Householder worked < FT; spouse did not work"
+	}, {
+		"key": "7",
+		"label": "Householder did not work; spouse worked FT"
+	}, {
+		"key": "8",
+		"label": "Householder did not work; spouse worked < FT"
+	}, {
+		"key": "9",
+		"label": "Householder did not work; spouse did not work"
+	}, {
+		"key": "10",
+		"label": "Male householder worked FT; no spouse present"
+	}, {
+		"key": "11",
+		"label": "Male householder worked < FT; no spouse present"
+	}, {
+		"key": "12",
+		"label": "Male householder did not work; no spouse present"
+	}, {
+		"key": "13",
+		"label": "Female householder worked FT; no spouse present"
+	}, {
+		"key": "14",
+		"label": "Female householder worked < FT; no spouse present"
+	}, {
+		"key": "15",
+		"label": "Female householder did not work; no spouse present"
+	}]
+}, {
+	"id": "WORKSTAT 2",
+	"label": "Work status of householder or spouse in family households",
+	"keys": [{
+		"key": "bb",
+		"label": "N/A (GQ/not a family household/same-sex married-couple families)"
+	}, {
+		"key": "1",
+		"label": "Husband and wife both in labor force, both employed or in Armed Forces"
+	}, {
+		"key": "2",
+		"label": "Husband and wife both in labor force, husband employed or in Armed Forces, wife unemployed"
+	}, {
+		"key": "3",
+		"label": "Husband in labor force and wife not in labor force, husband employed or in Armed Forces"
+	}, {
+		"key": "4",
+		"label": "Husband and wife both in labor force, husband unemployed, wife employed or in Armed Forces"
+	}, {
+		"key": "5",
+		"label": "Husband and wife both in labor force, husband unemployed, wife unemployed"
+	}, {
+		"key": "6",
+		"label": "Husband in labor force, husband unemployed, wife not in labor force"
+	}, {
+		"key": "7",
+		"label": "Husband not in labor force, wife in labor force, wife employed or in Armed Forces"
+	}, {
+		"key": "8",
+		"label": "Husband not in labor force, wife in labor force, wife unemployed"
+	}, {
+		"key": "9",
+		"label": "Neither husband nor wife in labor force"
+	}, {
+		"key": "10",
+		"label": "Male householder with no wife present, householder in labor force, employed or in Armed Forces"
+	}, {
+		"key": "11",
+		"label": "Male householder with no wife present, householder inlabor force and unemployed"
+	}, {
+		"key": "12",
+		"label": "Male householder with no wife present, householder not in labor force"
+	}, {
+		"key": "13",
+		"label": "Female householder with no husband present, householder in labor force, employed or in Armed Forces"
+	}, {
+		"key": "14",
+		"label": "Female householder with no husband present, householder inlabor force and unemployed"
+	}, {
+		"key": "15",
+		"label": "Female householder with no husband present, householder not in labor force"
+	}]
+}, {
+	"id": "FACCESSP 1",
+	"label": "Access to the Internet allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FACRP 1",
+	"label": "Lot size allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FAGSP 1",
+	"label": "Sales of Agricultural Products allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FBATHP 1",
+	"label": "Bathtub or shower allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FBDSP 1",
+	"label": "Number of bedrooms allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FBLDP 1",
+	"label": "Units in structure allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FBROADBNDP 1",
+	"label": "Mobile broadband plan allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FBUSP 1",
+	"label": "Business or medical office on property allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FCOMPOTHXP 1",
+	"label": "Other computer equipment allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FCONP 1",
+	"label": "Condominium fee allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FDIALUPP 1",
+	"label": "Dial-up service allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FDSLP 1",
+	"label": "DSL service allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FELEP 1",
+	"label": "Electricity (monthly cost) allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FFIBEROPP 1",
+	"label": "Fiber-optic Internet service allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FFINCP 1",
+	"label": "Family income (past 12 months) allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FFSP 1",
+	"label": "Yearly food stamp/Supplemental Nutrition Assistance Program",
+	"keys": [{
+		"key": "recipiency allocation flag",
+		"label": ""
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FFULP 1",
+	"label": "Fuel cost (yearly cost for fuels other than gas and electricity)",
+	"keys": [{
+		"key": "allocation flag",
+		"label": ""
+	}, {
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FGASP 1",
+	"label": "Gas (monthly cost) allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FGRNTP 1",
+	"label": "Gross rent (monthly amount) allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FHANDHELDP 1",
+	"label": "Handheld computer allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FHFLP 1",
+	"label": "House heating fuel allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FHINCP 1",
+	"label": "Household income (past 12 months) allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FHOTWATP 1",
+	"label": "Water heater allocation flag (Puerto Rico only)",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FINSP 1",
+	"label": "Fire, hazard, flood insurance (yearly amount) allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FKITP 1",
+	"label": "Complete kitchen facilities allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FLAPTOPP 1",
+	"label": "Laptop, desktop, or notebook computer allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FMHP 1",
+	"label": "Mobile home costs (yearly amount) allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FMODEMP 1",
+	"label": "Cable Internet service allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FMRGIP 1",
+	"label": "First mortgage payment includes fire, hazard, flood insurance",
+	"keys": [{
+		"key": "allocation flag",
+		"label": ""
+	}, {
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FMRGP 1",
+	"label": "First mortgage payment (monthly amount) allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FMRGTP 1",
+	"label": "First mortgage payment includes real estate taxes allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FMRGXP 1",
+	"label": "First mortgage status allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FMVP 1",
+	"label": "When moved into this house or apartment allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FOTHSVCEXP 1",
+	"label": "Other Internet service allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FPLMP 1",
+	"label": "Complete plumbing facilities allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FPLMPRP 1",
+	"label": "Complete plumbing facilities allocation flag for Puerto Rico",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FREFRP 1",
+	"label": "Refrigerator allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FRMSP 1",
+	"label": "Number of rooms allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FRNTMP 1",
+	"label": "Meals included in rent allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FRNTP 1",
+	"label": "Monthly rent allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FRWATP 1",
+	"label": "Hot and cold running water allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FRWATPRP 1",
+	"label": "Running water allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FSATELLITEP 1",
+	"label": "Satellite Internet service allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FSINKP 1",
+	"label": "Sink with a faucet allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FSMOCP 1",
+	"label": "Selected monthly owner cost allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FSMP 1",
+	"label": "Total payment on second and junior mortgages and home equity loans",
+	"keys": [{
+		"key": "(monthly amount)allocation flag",
+		"label": ""
+	}, {
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FSMXHP 1",
+	"label": "Home equity loan status allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FSMXSP 1",
+	"label": "Second mortgage status allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FSTOVP 1",
+	"label": "Stove or range allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FTAXP 1",
+	"label": "Property taxes (yearly amount) allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FTELP 1",
+	"label": "Telephone allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FTENP 1",
+	"label": "Tenure allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FTOILP 1",
+	"label": "Flush toilet allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FVACSP 1",
+	"label": "Vacancy status allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FVALP 1",
+	"label": "Property value allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FVEHP 1",
+	"label": "Vehicles available allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FWATP 1",
+	"label": "Water (yearly cost) allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "FYBLP 1",
+	"label": "When structure first built allocation flag",
+	"keys": [{
+		"key": "b",
+		"label": "N/A (GQ)"
+	}, {
+		"key": "0",
+		"label": "No"
+	}, {
+		"key": "1",
+		"label": "Yes"
+	}]
+}, {
+	"id": "WGTP1 5",
+	"label": "Housing Weight replicate 1",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP2 5",
+	"label": "Housing Weight replicate 2",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP3 5",
+	"label": "Housing Weight replicate 3",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP4 5",
+	"label": "Housing Weight replicate 4",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP5 5",
+	"label": "Housing Weight replicate 5",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP6 5",
+	"label": "Housing Weight replicate 6",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP7 5",
+	"label": "Housing Weight replicate 7",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP8 5",
+	"label": "Housing Weight replicate 8",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP9 5",
+	"label": "Housing Weight replicate 9",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP10 5",
+	"label": "Housing Weight replicate 10",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP11 5",
+	"label": "Housing Weight replicate 11",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP12 5",
+	"label": "Housing Weight replicate 12",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP13 5",
+	"label": "Housing Weight replicate 13",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP14 5",
+	"label": "Housing Weight replicate 14",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP15 5",
+	"label": "Housing Weight replicate 15",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP16 5",
+	"label": "Housing Weight replicate 16",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP17 5",
+	"label": "Housing Weight replicate 17",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP18 5",
+	"label": "Housing Weight replicate 18",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP19 5",
+	"label": "Housing Weight replicate 19",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP20 5",
+	"label": "Housing Weight replicate 20",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP21 5",
+	"label": "Housing Weight replicate 21",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP22 5",
+	"label": "Housing Weight replicate 22",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP23 5",
+	"label": "Housing Weight replicate 23",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP24 5",
+	"label": "Housing Weight replicate 24",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP25 5",
+	"label": "Housing Weight replicate 25",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP26 5",
+	"label": "Housing Weight replicate 26",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP27 5",
+	"label": "Housing Weight replicate 27",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP28 5",
+	"label": "Housing Weight replicate 28",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP29 5",
+	"label": "Housing Weight replicate 29",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP30 5",
+	"label": "Housing Weight replicate 30",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP31 5",
+	"label": "Housing Weight replicate 31",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP32 5",
+	"label": "Housing Weight replicate 32",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP33 5",
+	"label": "Housing Weight replicate 33",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP34 5",
+	"label": "Housing Weight replicate 34",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP35 5",
+	"label": "Housing Weight replicate 35",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP36 5",
+	"label": "Housing Weight replicate 36",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP37 5",
+	"label": "Housing Weight replicate 37",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP38 5",
+	"label": "Housing Weight replicate 38",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP39 5",
+	"label": "Housing Weight replicate 39",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP40 5",
+	"label": "Housing Weight replicate 40",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP41 5",
+	"label": "Housing Weight replicate 41",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP42 5",
+	"label": "Housing Weight replicate 42",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP43 5",
+	"label": "Housing Weight replicate 43",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP44 5",
+	"label": "Housing Weight replicate 44",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP45 5",
+	"label": "Housing Weight replicate 45",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP46 5",
+	"label": "Housing Weight replicate 46",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP47 5",
+	"label": "Housing Weight replicate 47",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP48 5",
+	"label": "Housing Weight replicate 48",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP49 5",
+	"label": "Housing Weight replicate 49",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP50 5",
+	"label": "Housing Weight replicate 50",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP51 5",
+	"label": "Housing Weight replicate 51",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP52 5",
+	"label": "Housing Weight replicate 52",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP53 5",
+	"label": "Housing Weight replicate 53",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP54 5",
+	"label": "Housing Weight replicate 54",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP55 5",
+	"label": "Housing Weight replicate 55",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP56 5",
+	"label": "Housing Weight replicate 56",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP57 5",
+	"label": "Housing Weight replicate 57",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP58 5",
+	"label": "Housing Weight replicate 58",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP59 5",
+	"label": "Housing Weight replicate 59",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP60 5",
+	"label": "Housing Weight replicate 60",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP61 5",
+	"label": "Housing Weight replicate 61",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP62 5",
+	"label": "Housing Weight replicate 62",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP63 5",
+	"label": "Housing Weight replicate 63",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP64 5",
+	"label": "Housing Weight replicate 64",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP65 5",
+	"label": "Housing Weight replicate 65",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP66 5",
+	"label": "Housing Weight replicate 66",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP67 5",
+	"label": "Housing Weight replicate 67",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP68 5",
+	"label": "Housing Weight replicate 68",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP69 5",
+	"label": "Housing Weight replicate 69",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP70 5",
+	"label": "Housing Weight replicate 70",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP71 5",
+	"label": "Housing Weight replicate 71",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP72 5",
+	"label": "Housing Weight replicate 72",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP73 5",
+	"label": "Housing Weight replicate 73",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP74 5",
+	"label": "Housing Weight replicate 74",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP75 5",
+	"label": "Housing Weight replicate 75",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP76 5",
+	"label": "Housing Weight replicate 76",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP77 5",
+	"label": "Housing Weight replicate 77",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP78 5",
+	"label": "Housing Weight replicate 78",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP79 5",
+	"label": "Housing Weight replicate 79",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}, {
+	"id": "WGTP80 5",
+	"label": "Housing Weight replicate 80",
+	"keys": [{
+		"key": "-9999..09999",
+		"label": "Integer weight of housing unit"
+	}]
+}]

@@ -1,0 +1,39 @@
+
+/* - Narrow desktop view lg - */
+/* - iPad view md - */
+/* - Responsive view sm - */
+/* - Mobile view xs - */
+#charts {
+	.axis {
+		path {
+		  fill:none;
+		  stroke: 1px solid black;
+	  }
+		line {
+		   stroke-weight: 1px;
+		}
+		text {
+			font-weight: 100;
+			font-size: 60%;
+		}
+	}
+
+	svg {
+		outline: 1px dashed grey;
+	}
+
+	div {
+		outline: 3px solid yellow;
+		div {
+			outline: 2px solid pink;
+			div {
+				outline: 1px solid purple;
+			}
+		}
+	}
+
+	h4 {
+		color:darkgrey;
+		font-family:Bookman Old Style;
+	}
+}
