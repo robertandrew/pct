@@ -230,41 +230,19 @@ var testArrays =[
 	];
 
 
-// function combineArrays(arg) {
-// 	var r = [];
-// 	var max = arg.length-1;
-//
-// 	function helper(arr,i){
-// 		for(var j=0, l=arg[i].length; j<l; j++)	{
-// 			var a = arr.slice(0);
-// 			a.push(arg[i][j]);
-// 			if(i==max){
-// 				r.push(a);
-// 			} else {
-// 				helper(a,i+1);
-// 			}
-// 		}
-// 	}
-// 	helper([],0);
-// 	return r;
-// }
-//
-// combineArrays(testArrays);
-// console.log(combineArrays(testArrays))
-
 var arrays = {
 	permute: function(inputArrays){
 
-
+		//The counter seeks to limit my trips through the array fiesta...
 		var finished = 0;
+		//Which will fill this unique object...
 		var uniqueArrays = [];
-
-
+		//...using a recursive function called pusher, which pushes things into other things
 		function pusher(){
-
+			//...use the counter to zip through all unfinished arrays...
 			var remaining = d3.range(finished,inputArrays.length);
-
 			remaining.forEach(function(i){
+
 				var newStuff = [];
 				inputArrays[i].forEach(function(dI,iI){
 					//Fill up the first layer
