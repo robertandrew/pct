@@ -4,13 +4,14 @@ var io = require('indian-ocean');
 var d3 = require('d3');
 var d3_scale = require('d3-scale');
 
-//READ IN DATA AND TEMPORARILY SHRINK IT
+//READ IN DATA
 var pums = io.readDataSync('ss14pid.csv');
 var pumsPersonKey = io.readDataSync('pumsPersonKey.json');
 
-var newPums = [];
-var subsets = ['42430','SCHL','SEX','OC','NATIVITY','RAC1P','SCIENGRLP','VPS','WAOB','AGEP'];
-console.log(subsets);
+
+// var subsets = ['42430','SCHL','SEX','OC','NATIVITY','RAC1P','SCIENGRLP','VPS','WAOB','AGEP'];
+var subsets = ['42430','SEX','OC','NATIVITY'];
+
 
 //VARIOUS UTILITY FUNCTIONS
 var util = {
@@ -22,9 +23,9 @@ var util = {
 
 //VARIOUS SCALES
 var scale = {
-	label: d3.scale.ordinal()
+	key: d3.scale.ordinal()
 		.domain(pumsPersonKey.map(function(m){return util.unspaceUncase(m.id);}))
-		.range(pumsPersonKey.map(function(m){return m.label;})),
+		.range(pumsPersonKey.map(function(m){return m;})),
 	rawScale: function(d){
 		if(d===undefined){
 			console.log(d);
@@ -33,15 +34,16 @@ var scale = {
  		else {
 			return d;
 		}
-	}
+	},
+	combinedId : []
 };
 
-subsets.forEach(function(dS,iS){
-	console.log(scale.label(dS));
-});
 
 var percentile = {
-	calculate: function(dataset){
+	init: function(dataset){
+		percentile.nest(dataset);
+	},
+	calculate: function(dataset,id){
 
 		var included = 0;
 		var excluded = 0;
@@ -113,6 +115,9 @@ var percentile = {
 
 					thisItem.bottomBreak = +thisValue + valueAdjustment;
 				 }
+				 if(thisItem===null){
+					 console.log(dD);
+				 }
 				 percentiles.push(thisItem);
 			}
 
@@ -125,51 +130,200 @@ var percentile = {
 
 
 		//Sort percentiles for coherence sake
-		percentiles = percentiles.sort(function(a,b){
-			return d3.ascending(a.percentile,b.percentile);
+		var thisObject =
+		{
+			// 	percentiles: percentiles.sort(function(a,b){
+			// 	return d3.ascending(a.percentile,b.percentile);
+			// }),
+	 		sample:included,
+			id:id,
+			subdivisions:[],
+			exclusions:[]
+		};
+
+		return thisObject;
+
+	},
+	nest: function(dataset){
+		//LAYER ONE, JUST INCOME
+		var blob = {overall:percentile.calculate(dataset,'overall')};
+
+		//LAYER TWO, EVERYTHING
+		subsets.forEach(function(dS){
+			var subKeys = scale.key(dS).keys;
+
+			blob[dS] = [];
+
+			//Here we have the particular path we're following
+			var thisTree = [];
+
+			subKeys.forEach(function(dK,iK){
+
+				thisTree.push({
+					id:dS,
+					value:dK.key
+				});
+
+				var thisKey = "K" + dS + dK.key;
+
+				scale.combinedId.push({
+					key:thisKey,
+					label:dK.label
+				});
+				// var subset = dataset.filter(function(f){
+				// 	return f[dS] == dK.label;
+				// });
+				blob[dS][thisKey] = percentile.calculate(dataset,thisKey);
+				// d3.keys(blob).forEach(function(k){
+				// 	console.log(k + " is " + blob[k].length)
+				// });
+
+
+				// console.log(blob[dS][thisKey])
+			});
+			// console.log(thisTree);
+
 		});
-
-		// console.log(included + " in, " + excluded + " out");
-
-	},
-	restrict: function(dataset,incomeVar){
-		//Pulls out one top-level code from the dataset
-	},
-	nest: function(dataset,subset){
+		// console.log((blob));
 
 	}
 };
 
 //ADD SCALES FOR EVERY SINGLE KEY ITEM
-pumsPersonKey.forEach(function(d){
-
-	if(JSON.stringify(d.keys).indexOf('..')==-1){
-		var thisScale = d3.scale.ordinal()
-			.domain(d.keys.map(function(m){return m.key;}))
-			.range(d.keys.map(function(m){return m.label;}));
-
-		scale[util.unspaceUncase(d.id)] = thisScale;
-	}
-	//If it has only one item, them we only need the direct value
-	else {
-		scale[util.unspaceUncase(d.id)] = scale.rawScale;
-	}
-});
-
-pums.forEach(function(dP,iP){
-	var keys = d3.keys(dP).filter(function(f){return f!==undefined;});
-	keys.forEach(function(dK,iK){
-		dK = util.unspaceUncase(dK);
-		if(scale[dK]!==undefined){
-			dP[dK] = scale[dK](dP[dK]);
-		}
-	});
-});
+// pumsPersonKey.forEach(function(d){
+//
+// 	if(JSON.stringify(d.keys).indexOf('..')==-1){
+// 		var thisScale = d3.scale.ordinal()
+// 			.domain(d.keys.map(function(m){return m.key;}))
+// 			.range(d.keys.map(function(m){return m.label;}));
+//
+// 		scale[util.unspaceUncase(d.id)] = thisScale;
+// 	}
+// 	//If it has only one item, them we only need the direct value
+// 	else {
+// 		scale[util.unspaceUncase(d.id)] = scale.rawScale;
+// 	}
+// });
+//
+// pums.forEach(function(dP,iP){
+// 	var keys = d3.keys(dP).filter(function(f){return f!==undefined;});
+// 	keys.forEach(function(dK,iK){
+// 		dK = util.unspaceUncase(dK);
+// 		if(scale[dK]!==undefined){
+// 			dP[dK] = scale[dK](dP[dK]);
+// 		}
+// 	});
+// });
 
 //CALCULATE THE PERCENTILES
 
-percentile.calculate(pums);
+//percentile.init(pums);
 
+//Start with a blank to test everything against
+
+var testArrays =[
+	['a1','a2','a3'],
+	['b1','b2'],
+	['c1','c2','c3','c4'],
+	['d1','d2'],
+	['e1','e2','e3','e4','e5']
+	];
+
+
+// function combineArrays(arg) {
+// 	var r = [];
+// 	var max = arg.length-1;
+//
+// 	function helper(arr,i){
+// 		for(var j=0, l=arg[i].length; j<l; j++)	{
+// 			var a = arr.slice(0);
+// 			a.push(arg[i][j]);
+// 			if(i==max){
+// 				r.push(a);
+// 			} else {
+// 				helper(a,i+1);
+// 			}
+// 		}
+// 	}
+// 	helper([],0);
+// 	return r;
+// }
+//
+// combineArrays(testArrays);
+// console.log(combineArrays(testArrays))
+
+var arrays = {
+	permute: function(inputArrays){
+
+
+		var finished = 0;
+		var uniqueArrays = [];
+
+
+		function pusher(){
+
+			var remaining = d3.range(finished,inputArrays.length);
+
+			remaining.forEach(function(i){
+				var newStuff = [];
+				inputArrays[i].forEach(function(dI,iI){
+					//Fill up the first layer
+					if(finished===0){
+						uniqueArrays.push([dI]);
+					}
+					//Otherwise, combine every remaining item with every previous item
+					else {
+						//Combine every previous item....
+						uniqueArrays.forEach(function(dU,iU){
+							var alreadyPresent = false;
+							inputArrays[i].forEach(function(dI,iI){
+								if(dU.indexOf(dI)!=-1){
+									alreadyPresent = true;
+								}
+							});
+
+							if(alreadyPresent === false){
+								newItem = [];
+								dU.forEach(function(dUI){
+									newItem.push(dUI);
+								});
+								newItem.push(dI);
+
+								uniqueString = "|" + uniqueArrays.join("|") + '|';
+								input = newItem.sort();
+								inputString = "|" + input.join() + '|';
+
+								if(uniqueString.indexOf(inputString)==-1) {
+									newStuff.push(input);
+								}
+							}
+						});
+
+					}
+				});
+				uniqueArrays = uniqueArrays.concat(newStuff).sort(function(a,b){
+					return d3.ascending(a.length,b.length);
+				});
+				if(i == inputArrays.length-1 && finished <= inputArrays.length-1){
+					finished++;
+					pusher();
+				}
+
+			});
+		}
+		pusher();
+		return uniqueArrays;
+	}
+};
+
+
+
+//Load the beginning array object
+
+//Increment the finished indicator
+var results = arrays.permute(testArrays);
+console.log(results)
+console.log(results.length + ' results');
 
  // console.log(pums[10]);
 
