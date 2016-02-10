@@ -9,7 +9,7 @@ var pums = io.readDataSync('ss14pid.csv');
 var pumsPersonKey = io.readDataSync('pumsPersonKey.json');
 
 
-// var subsets = ['42430','SCHL','SEX','OC','NATIVITY','RAC1P','SCIENGRLP','VPS','WAOB','AGEP'];
+// var subsets = ;
 var subsets = ['42430','SEX','OC','NATIVITY'];
 
 
@@ -18,6 +18,108 @@ var util = {
 	unspaceUncase: function(object){
 		object = object.split(' ')[0].toUpperCase();
 		return object;
+	}
+};
+
+var arrays = {
+	subsets: ['42430','SEX','OC','WAOB'],
+	// subsets: ['42430','SCHL','SEX','OC','NATIVITY','RAC1P','SCIENGRLP','VPS','WAOB','AGEP'],
+	expandSubsets: function(subsets){
+		var expanded = [];
+		subsets.forEach(function(dSub,iSub){
+			subsetArray = [];
+			var thisSubKeys = (scale.key(dSub).keys);
+			thisSubKeys.forEach(function(dKey,iKey){
+				combinedId = "K_" + dSub + "_" + dKey.key;
+				subsetArray.push(combinedId);
+				scale.combinedId.push({combinedId:combinedId,
+					label:dKey.label,
+				id:dSub});
+
+			});
+			expanded.push(subsetArray);
+		});
+		return expanded;
+	},
+
+	permute: function(){
+		var inputArrays = arrays.expandSubsets(arrays.subsets);
+
+		//The counter seeks to limit my trips through the array fiesta...
+		var finished = 0;
+		//Which will fill this unique object...
+		var uniqueArrays = [];
+		//...using a recursive function called pusher, which pushes things into other things
+		function pusher(){
+			//...use the counter to zip through all unfinished arrays...
+			var remaining = d3.range(finished,inputArrays.length);
+
+
+			remaining.forEach(function(i){
+
+				//A blank object will hold the new things so that it doesn't mess with the old things.
+				var newStuff = [];
+
+				inputArrays[i].forEach(function(dI,iI){
+					//Fill up the first layer
+					if(finished===0){
+						uniqueArrays.push([dI]);
+					}
+					//Otherwise, combine every remaining item with every previous item
+					else {
+						//Go through the entire backlog...
+						uniqueArrays.forEach(function(dU,iU){
+							//...and as long as we haven't added a thing for a parcular level of pivoting yet...
+							var alreadyPresent = false;
+
+							//...and we have to check every single level to make sure that's the case...
+							inputArrays[i].forEach(function(dI,iI){
+								if(dU.indexOf(dI)!=-1){
+									alreadyPresent = true;
+								}
+							});
+
+							//..and if it's not present...
+							if(alreadyPresent === false){
+								//...then make a new item!...
+								newItem = [];
+								//...that has everything the previous one did...
+								dU.forEach(function(dUI){
+									newItem.push(dUI);
+								});
+								//...plus the one new thing...
+								newItem.push(dI);
+
+								//...and isn't already present in the unique set, which we check by creating huge, wacky strings...
+								uniqueString = "|" + uniqueArrays.join("|") + '|';
+								input = newItem.sort();
+								inputString = "|" + input.join() + '|';
+
+								//and if those strings don't return a match...
+								if(uniqueString.indexOf(inputString)==-1) {
+									//we add it in!
+									newStuff.push(input);
+								}
+							}
+						});
+
+					}
+				});
+				//And then we combine all the new stuff, rinse...
+				uniqueArrays = uniqueArrays.concat(newStuff).sort(function(a,b){
+					return d3.ascending(a.length,b.length);
+				});
+
+				//...and repeat
+				if(i == inputArrays.length-1 && finished <= inputArrays.length-1){
+					finished++;
+					pusher();
+				}
+
+			});
+		}
+		pusher();
+		return uniqueArrays;
 	}
 };
 
@@ -35,13 +137,14 @@ var scale = {
 			return d;
 		}
 	},
-	combinedId : []
+	combinedId : [],
+
 };
 
 
 var percentile = {
-	init: function(dataset){
-		percentile.nest(dataset);
+	init: function(dataset,permutations){
+		percentile.blob(dataset,permutations);
 	},
 	calculate: function(dataset,id){
 
@@ -132,176 +235,80 @@ var percentile = {
 		//Sort percentiles for coherence sake
 		var thisObject =
 		{
-			// 	percentiles: percentiles.sort(function(a,b){
-			// 	return d3.ascending(a.percentile,b.percentile);
-			// }),
+			percentiles: percentiles.sort(function(a,b){
+				return d3.ascending(a.percentile,b.percentile);
+			}),
 	 		sample:included,
-			id:id,
-			subdivisions:[],
-			exclusions:[]
 		};
 
+		console.log(thisObject.percentiles)
 		return thisObject;
 
 	},
-	nest: function(dataset){
-		//LAYER ONE, JUST INCOME
-		var blob = {overall:percentile.calculate(dataset,'overall')};
+	blob: function(dataset,permutations){
+		// console.log(scale.combinedId);
+		var blob = {
+			all: percentile.calculate(dataset,'all')
+		};
+		filterCount = 0;
 
-		//LAYER TWO, EVERYTHING
-		subsets.forEach(function(dS){
-			var subKeys = scale.key(dS).keys;
+		permutations.forEach(function(dPerm,iPerm){
+			var filtered = dataset;
+			var identifier = dPerm.sort().join("|");
+			dPerm.forEach(function(dFilter,iFilter){
+				filterOn = dFilter.split('_')[1];
+				filterOut = dFilter.split('_')[2];
 
-			blob[dS] = [];
+				filtered = dataset.filter(function(f){
 
-			//Here we have the particular path we're following
-			var thisTree = [];
-
-			subKeys.forEach(function(dK,iK){
-
-				thisTree.push({
-					id:dS,
-					value:dK.key
-				});
-
-				var thisKey = "K" + dS + dK.key;
-
-				scale.combinedId.push({
-					key:thisKey,
-					label:dK.label
-				});
-				// var subset = dataset.filter(function(f){
-				// 	return f[dS] == dK.label;
-				// });
-				blob[dS][thisKey] = percentile.calculate(dataset,thisKey);
-				// d3.keys(blob).forEach(function(k){
-				// 	console.log(k + " is " + blob[k].length)
-				// });
-
-
-				// console.log(blob[dS][thisKey])
+					return f[filterOn]==filterOut;});
+				filterCount++;
 			});
-			// console.log(thisTree);
-
+			if(filtered.length!=0){
+				blob[identifier] = percentile.calculate(filtered,identifier);
+			} else {
+				console.log(identifier + " filtered out literally everybody");
+			}
 		});
-		// console.log((blob));
+
+		return blob;
 
 	}
 };
 
-//ADD SCALES FOR EVERY SINGLE KEY ITEM
-// pumsPersonKey.forEach(function(d){
-//
-// 	if(JSON.stringify(d.keys).indexOf('..')==-1){
-// 		var thisScale = d3.scale.ordinal()
-// 			.domain(d.keys.map(function(m){return m.key;}))
-// 			.range(d.keys.map(function(m){return m.label;}));
-//
-// 		scale[util.unspaceUncase(d.id)] = thisScale;
-// 	}
-// 	//If it has only one item, them we only need the direct value
-// 	else {
-// 		scale[util.unspaceUncase(d.id)] = scale.rawScale;
-// 	}
-// });
+// ADD SCALES FOR EVERY SINGLE KEY ITEM
+pumsPersonKey.forEach(function(d){
+
+	if(JSON.stringify(d.keys).indexOf('..')==-1){
+		var thisScale = d3.scale.ordinal()
+			.domain(d.keys.map(function(m){return m.key;}))
+			.range(d.keys.map(function(m){return m.label;}));
+
+		scale[util.unspaceUncase(d.id)] = thisScale;
+	}
+	//If it has only one item, them we only need the direct value
+	else {
+		scale[util.unspaceUncase(d.id)] = scale.rawScale;
+	}
+});
 //
 // pums.forEach(function(dP,iP){
 // 	var keys = d3.keys(dP).filter(function(f){return f!==undefined;});
 // 	keys.forEach(function(dK,iK){
 // 		dK = util.unspaceUncase(dK);
-// 		if(scale[dK]!==undefined){
-// 			dP[dK] = scale[dK](dP[dK]);
-// 		}
+// 		// if(scale[dK]!==undefined){
+// 		// 	dP[dK] = scale[dK](dP[dK]);
+// 		// }
 // 	});
 // });
 
 //CALCULATE THE PERCENTILES
 
-//percentile.init(pums);
-
-//Start with a blank to test everything against
-
-var testArrays =[
-	['a1','a2','a3'],
-	['b1','b2'],
-	['c1','c2','c3','c4'],
-	['d1','d2'],
-	['e1','e2','e3','e4','e5']
-	];
-
-
-var arrays = {
-	permute: function(inputArrays){
-
-		//The counter seeks to limit my trips through the array fiesta...
-		var finished = 0;
-		//Which will fill this unique object...
-		var uniqueArrays = [];
-		//...using a recursive function called pusher, which pushes things into other things
-		function pusher(){
-			//...use the counter to zip through all unfinished arrays...
-			var remaining = d3.range(finished,inputArrays.length);
-			remaining.forEach(function(i){
-
-				var newStuff = [];
-				inputArrays[i].forEach(function(dI,iI){
-					//Fill up the first layer
-					if(finished===0){
-						uniqueArrays.push([dI]);
-					}
-					//Otherwise, combine every remaining item with every previous item
-					else {
-						//Combine every previous item....
-						uniqueArrays.forEach(function(dU,iU){
-							var alreadyPresent = false;
-							inputArrays[i].forEach(function(dI,iI){
-								if(dU.indexOf(dI)!=-1){
-									alreadyPresent = true;
-								}
-							});
-
-							if(alreadyPresent === false){
-								newItem = [];
-								dU.forEach(function(dUI){
-									newItem.push(dUI);
-								});
-								newItem.push(dI);
-
-								uniqueString = "|" + uniqueArrays.join("|") + '|';
-								input = newItem.sort();
-								inputString = "|" + input.join() + '|';
-
-								if(uniqueString.indexOf(inputString)==-1) {
-									newStuff.push(input);
-								}
-							}
-						});
-
-					}
-				});
-				uniqueArrays = uniqueArrays.concat(newStuff).sort(function(a,b){
-					return d3.ascending(a.length,b.length);
-				});
-				if(i == inputArrays.length-1 && finished <= inputArrays.length-1){
-					finished++;
-					pusher();
-				}
-
-			});
-		}
-		pusher();
-		return uniqueArrays;
-	}
-};
-
-
-
-//Load the beginning array object
-
 //Increment the finished indicator
-var results = arrays.permute(testArrays);
-console.log(results)
-console.log(results.length + ' results');
+var results = arrays.permute();
+
+percentile.init(pums.filter(function(f,i){return i}),results);
+// console.log(results.length + ' results');
 
  // console.log(pums[10]);
 

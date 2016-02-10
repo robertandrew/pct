@@ -10413,6 +10413,34 @@
 	   "label": "Other US Island Areas Not Specified, Africa, Oceania, at Sea, or Abroad, Not Specified"
    }]
 }, {
+   "id": "WAOB 1",
+   "label": "World area of birth",
+   "keys": [{
+	   "key": "1",
+	   "label": "US state (POB - 001-059)"
+   }, {
+	   "key": "2",
+	   "label": "PR and US Island Areas (POB - 060-099)"
+   }, {
+	   "key": "3",
+	   "label": "Latin America (POB - 303,310-399)"
+   }, {
+	   "key": "4",
+	   "label": "Asia (POB - 158-159,161,200-299)"
+   }, {
+	   "key": "5",
+	   "label": "Europe (POB - 100-157,160,162-199)"
+   }, {
+	   "key": "6",
+	   "label": "Africa (POB - 400-499)"
+   }, {
+	   "key": "7",
+	   "label": "Northern America (POB - 300-302,304-309)"
+   }, {
+	   "key": "8",
+	   "label": "Oceania and at Sea (POB - 500-554)"
+   }]
+}, {
    "id": "PRIVCOV 1",
    "label": "Private health insurance coverage recode",
    "keys": [{
@@ -12651,34 +12679,6 @@
 	   "label": "Pre-WWII only"
    }]
 }, {
-   "id": "WAOB 1",
-   "label": "World area of birth ****",
-   "keys": [{
-	   "key": "1",
-	   "label": "US state (POB = 001-059)"
-   }, {
-	   "key": "2",
-	   "label": "PR and US Island Areas (POB = 060-099)"
-   }, {
-	   "key": "3",
-	   "label": "Latin America (POB = 303,310-399)"
-   }, {
-	   "key": "4",
-	   "label": "Asia (POB = 158-159,161,200-299)"
-   }, {
-	   "key": "5",
-	   "label": "Europe (POB = 100-157,160,162-199)"
-   }, {
-	   "key": "6",
-	   "label": "Africa (POB = 400-499)"
-   }, {
-	   "key": "7",
-	   "label": "Northern America (POB = 300-302,304-309)"
-   }, {
-	   "key": "8",
-	   "label": "Oceania and at Sea (POB = 500-554)"
-   }]
-}, {
    "id": "FAGEP 1",
    "label": "Age allocation flag",
    "keys": [{
@@ -12923,7 +12923,7 @@
    "label": "Medicare coverage given through the eligibility coverage edit",
    "keys": [{
 	   "key": "b",
-	   "label": "Does not have Medicare coverage (HINS3=2)"
+	   "label": "Does not have Medicare coverage (HINS3-2)"
    }, {
 	   "key": "0",
 	   "label": "No"
@@ -12949,7 +12949,7 @@
    "label": "Medicaid coverage given through the eligibility coverage edit",
    "keys": [{
 	   "key": "b",
-	   "label": "Does not have Medicaid coverage (HINS4=2)"
+	   "label": "Does not have Medicaid coverage (HINS4-2)"
    }, {
 	   "key": "0",
 	   "label": "No"
@@ -12975,7 +12975,7 @@
    "label": "TRICARE coverage given through the eligibility coverage edit",
    "keys": [{
 	   "key": "b",
-	   "label": "Does not have TRICARE coverage (HINS5=2)"
+	   "label": "Does not have TRICARE coverage (HINS5-2)"
    }, {
 	   "key": "0",
 	   "label": "No"
