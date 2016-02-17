@@ -1,17 +1,11 @@
 //DEPENDENCIES
-
 var io = require('indian-ocean');
 var d3 = require('d3');
 var d3_scale = require('d3-scale');
 
 //READ IN DATA
-var pums = io.readDataSync('ss14pid.csv');
+var rawPums = io.readDataSync('ss14pid.csv');
 var pumsPersonKey = io.readDataSync('pumsPersonKey.json');
-
-
-// var subsets = ;
-var subsets = ['42430','SEX','OC','NATIVITY'];
-
 
 //VARIOUS UTILITY FUNCTIONS
 var util = {
@@ -21,8 +15,193 @@ var util = {
 	}
 };
 
+var edLevels = [
+	{
+	   "key": "bb",
+	   "output":"none",
+	   "label": "N/A (less than 3 years old)"
+	}, {
+	   "key": "1",
+	   "output":"none",
+	   "label": "No schooling completed"
+	}, {
+	   "key": "2",
+	   "output":"elementary",
+	   "label": "Nursery school, preschool"
+	}, {
+	   "key": "3",
+	   "output":"elementary",
+	   "label": "Kindergarten"
+	}, {
+	   "key": "4",
+	   "output":"elementary",
+	   "label": "Grade 1"
+	}, {
+	   "key": "5",
+	   "output":"elementary",
+	   "label": "Grade 2"
+	}, {
+	   "key": "6",
+	   "output":"elementary",
+	   "label": "Grade 3"
+	}, {
+	   "key": "7",
+	   "output":"elementary",
+	   "label": "Grade 4"
+	}, {
+	   "key": "8",
+	   "output":"elementary",
+	   "label": "Grade 5"
+	}, {
+	   "key": "9",
+	   "output":"middle",
+	   "label": "Grade 6"
+	}, {
+	   "key": "10",
+	   "output":"middle",
+	   "label": "Grade 7"
+	}, {
+	   "key": "11",
+	   "output":"middle",
+	   "label": "Grade 8"
+	}, {
+	   "key": "12",
+	   "output":"high",
+	   "label": "Grade 9"
+	}, {
+	   "key": "13",
+	   "output":"high",
+	   "label": "Grade 10"
+	}, {
+	   "key": "14",
+	   "output":"high",
+	   "label": "Grade 11"
+	}, {
+	   "key": "15",
+	   "output":"high",
+	   "label": "12th grade - no diploma"
+	}, {
+	   "key": "16",
+	   "output":"highGrad",
+	   "label": "Regular high school diploma"
+	}, {
+	   "key": "17",
+	   "output":"highGrad",
+	   "label": "GED or alternative credential"
+	}, {
+	   "key": "18",
+	   "output":"someCollege",
+	   "label": "Some college, but less than 1 year"
+	}, {
+	   "key": "19",
+	   "output":"someCollege",
+	   "label": "1 or more years of college credit, no degree"
+	}, {
+	   "key": "20",
+	   "output":"someCollege",
+	   "label": "Associate's degree"
+	}, {
+	   "key": "21",
+	   "output":"bachelor",
+	   "label": "Bachelor's degree"
+	}, {
+	   "key": "22",
+	   "output":"master",
+	   "label": "Master's degree"
+	}, {
+	   "key": "23",
+	   "output":"master",
+	   "label": "Professional degree beyond a bachelor's degree"
+	}, {
+	   "key": "24",
+	   "output":"phd",
+	   "label": "Doctorate degree"
+   }
+];
+
+
+//SUMMARIZE COLUMNS WHEN NECESARy
+var addColumns = {
+	init: function(dataset){
+		dataset.forEach(function(d,i){
+			//Each new column gets added
+			addColumns.NEWRACE(d);
+			addColumns.NEWAGE(d);
+			addColumns.NEWWORKER(d);
+			addColumns.NEWSCHOOL(d);
+		});
+		return dataset;
+	},
+	NEWSCHOOL: function(datapoint){
+		// console.log(datapoint);
+		datapoint.NEWSCHOOL = addColumns.schoolCategorizer(datapoint.SCHL);
+
+		console.log(datapoint.NEWSCHOOL);
+
+	},
+	NEWRACE: function(datapoint){
+		var race = +datapoint.RAC1P;
+		var NEWRACE;
+		if(+datapoint.HISP!=1){
+			NEWRACE = 'hispanic';
+		} else if(race == 1) {
+			NEWRACE = 'white';
+		} else if(race == 2) {
+			NEWRACE = 'black';
+		} else if(race == 3 || race==4 || race == 5) {
+			NEWRACE = 'indian';
+		} else if(race == 7 || race ==6){
+			NEWRACE = "asian";
+		} else if(race == 8 || race == 9) {
+			NEWRACE = "other";
+		}
+		datapoint.NEWRACE = NEWRACE;
+	},
+	NEWAGE: function(datapoint){
+		var age = +datapoint.AGEP;
+		var NEWAGE;
+
+		if(age<=15){
+			NEWAGE='15';
+		} else if(age<=24){
+			NEWAGE='24';
+		} else if(age<=34){
+			NEWAGE='34';
+		} else if(age<=44){
+			NEWAGE='44';
+		} else if(age<=54){
+			NEWAGE='54';
+		} else if(age<=64){
+			NEWAGE='64';
+		} else if(age>=65){
+			NEWAGE='200';
+		} else {
+			NEWAGE="";
+			console.log(datapoint.AGEP + " wasn't defined");
+		}
+		datapoint.NEWAGE = NEWAGE;
+	},
+	NEWWORKER: function(datapoint){
+		var worker = datapoint.COW;
+		var selfOrFamily = ["8","6","7"];
+		if (selfOrFamily.indexOf(worker)!=-1){
+			datapoint.NEWWORKER = "10";
+		} else {
+			datapoint.NEWWORKER = worker;
+		}
+	},
+
+   schoolCategorizer: d3.scale.ordinal()
+   		.domain((edLevels).map(function(d){return d.key}))
+   		.range((edLevels).map(function(d){return d.output}))
+
+};
+
+console.log(addColumns.levels);
+
+
 var arrays = {
-	subsets: ['42430','SEX','OC','WAOB'],
+	subsets: ['NEWSCHOOL','SEX','OC'],
 	// subsets: ['42430','SCHL','SEX','OC','NATIVITY','RAC1P','SCIENGRLP','VPS','WAOB','AGEP'],
 	expandSubsets: function(subsets){
 		var expanded = [];
@@ -143,15 +322,12 @@ var scale = {
 
 
 var percentile = {
-	init: function(dataset,permutations){
-		percentile.blob(dataset,permutations);
-	},
 	calculate: function(dataset,id){
 
 		var included = 0;
 		var excluded = 0;
-	 	var incomeVar = "WAGP";//wages and salary
-		// var incomeVar = "PINCP";//Personal income, signed
+		// 	var incomeVar = "WAGP";//wages and salary
+		var incomeVar = "PINCP";//Personal income, signed
 		// var incomeVar = "PERNP";//Earnings
 		var weight = "PWFTP";
 
@@ -167,9 +343,9 @@ var percentile = {
 		});
 
 		//FLAG TINY SAMPLES
-		if(included<=100){
-			console.log('Your subsample is only ' + included + ', which is definitely something to look out for.');
-		}
+		// if(included<=100){
+		// 	console.log('Your subsample is only ' + included + ', which is definitely something to look out for.');
+		// }
 
 		//SORT IT BY INCOME
 		liveSet = liveSet.sort(function(a,b){
@@ -241,7 +417,6 @@ var percentile = {
 	 		sample:included,
 		};
 
-		console.log(thisObject.percentiles)
 		return thisObject;
 
 	},
@@ -264,11 +439,12 @@ var percentile = {
 					return f[filterOn]==filterOut;});
 				filterCount++;
 			});
-			if(filtered.length!=0){
+			if(filtered.length!==0){
 				blob[identifier] = percentile.calculate(filtered,identifier);
 			} else {
 				console.log(identifier + " filtered out literally everybody");
 			}
+			// console.log(filtered.length)
 		});
 
 		return blob;
@@ -278,7 +454,10 @@ var percentile = {
 
 // ADD SCALES FOR EVERY SINGLE KEY ITEM
 pumsPersonKey.forEach(function(d){
-
+	//
+	// if(d.id=="NEWAGE"){
+	// 	console.log(d);
+	// }
 	if(JSON.stringify(d.keys).indexOf('..')==-1){
 		var thisScale = d3.scale.ordinal()
 			.domain(d.keys.map(function(m){return m.key;}))
@@ -303,15 +482,16 @@ pumsPersonKey.forEach(function(d){
 // });
 
 //CALCULATE THE PERCENTILES
+// console.log(arrays.permute())//Increment the finished indicator
+var permutations = arrays.permute();
+console.log(d3.sum(permutations,function(s){return s.length}))
+console.log(permutations.length)
 
-//Increment the finished indicator
-var results = arrays.permute();
+var blob = percentile.blob(addColumns.init( rawPums ),permutations);
+d3.keys(blob).forEach(function(d,i){
+	var sample = blob[d].sample;
+	console.log(d, sample)
+})
 
-percentile.init(pums.filter(function(f,i){return i}),results);
-// console.log(results.length + ' results');
-
- // console.log(pums[10]);
-
-
-// io.writeDataSync('pums.json',newPums);
+// io.writeDataSync('pums.json',blob);
 // io.writeDataSync('fullPums.json',pums);

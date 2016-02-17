@@ -210,7 +210,34 @@
 	   "key": "01..99",
 	   "label": "1 to 99 years (Top-coded***)"
    }]
-}, {
+},
+{
+"id": "NEWAGE",
+   "label": "Age group",
+   "keys": [{
+	   "key": "15",
+	   "label": "15 and under"
+   }, {
+	   "key": "24",
+	   "label": "16 to 24"
+   }, {
+	   "key": "34",
+	   "label": "25 to 34"
+   }, {
+	   "key": "44",
+	   "label": "35 to 44"
+   }, {
+	   "key": "54",
+	   "label": "45 to 54"
+   }, {
+	   "key": "64",
+	   "label": "55 to 64"
+   }, {
+	   "key": "200",
+	   "label": "65 and above"
+   }]
+},
+{
    "id": "CIT 1",
    "label": "Citizenship status",
    "keys": [{
@@ -488,6 +515,34 @@
    }, {
 	   "key": "8",
 	   "label": "Working without pay in family business or farm"
+   }, {
+	   "key": "9",
+	   "label": "Unemployed and last worked 5 years ago or earlier or never worked"
+   }]
+}, {
+   "id": "NEWWORKER",
+   "label": "WSJ class of worker",
+   "keys": [{
+	   "key": "b",
+	   "label": "N/A (less than 16 years old/NILF who last worked more than 5 years ago or never worked)"
+   }, {
+	   "key": "1",
+	   "label": "Employee of a private company"
+   }, {
+	   "key": "2",
+	   "label": "Employee of a nonprofit or charity"
+   }, {
+	   "key": "3",
+	   "label": "Local government employee"
+   }, {
+	   "key": "4",
+	   "label": "State government employee"
+   }, {
+	   "key": "5",
+	   "label": "Federal government employee"
+   }, {
+	   "key": "10",
+	   "label": "Self-employed or unpaid worker on family business/farm"
    }, {
 	   "key": "9",
 	   "label": "Unemployed and last worked 5 years ago or earlier or never worked"
@@ -1563,6 +1618,37 @@
    }, {
 	   "key": "3",
 	   "label": "Yes, private school or college or home school"
+   }]
+}, {
+   "id": "NEWSCHOOL",
+   "label": "WSJ highest level of educational attainment",
+   "keys": [{
+	   "key": "none",
+	   "label": "No education or N/A"
+   }, {
+	   "key": "elementary",
+	   "label": "Elementary school"
+   }, {
+	   "key": "middle",
+	   "label": "Middle school"
+   }, {
+	   "key": "high",
+	   "label": "High school dropout"
+   }, {
+	   "key": "highGrad",
+	   "label": "High-school or equivalent"
+   }, {
+	   "key": "someCollege",
+	   "label": "Some college, up to and including associate's"
+   }, {
+	   "key": "bachelor",
+	   "label": "Bachelor's degree"
+   }, {
+	   "key": "master",
+	   "label": "Masters or professional degree"
+   }, {
+	   "key": "phd",
+	   "label": "Doctorate"
    }]
 }, {
    "id": "SCHG 2",
@@ -10507,7 +10593,33 @@
 	   "key": "9",
 	   "label": "Two or More Races"
    }]
-}, {
+},{
+   "id": "NEWRACE",
+   "label": "WSJ combined race and ethnicity",
+   "keys": [{
+	   "key": "white",
+	   "label": "White, nonhispanic"
+   }, {
+	   "key": "black",
+	   "label": "Black, nonhispanic"
+   }, {
+	   "key": "hispanic",
+	   "label": "Hispanic of any race"
+   }, {
+	   "key": "indian",
+	   "label": "Native American"
+   }, {
+	   "key": "asian",
+	   "label": "Asian or Pacific Islander"
+   }, {
+	   "key": "other",
+	   "label": "Other or mixed"
+   }]
+},
+
+
+
+{
    "id": "RAC2P 2",
    "label": "Recoded detailed race code",
    "keys": [{
